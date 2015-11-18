@@ -32,12 +32,19 @@ export const build: MarkScript.Build = {
     },
     fileServerPath: './www',
     middle: {
-          host: COMMON.koa.host,
-          port: COMMON.koa.port
-        },
+      host: COMMON.koa.host,
+      port: COMMON.koa.port
+    },
     assetBaseDir: './src'
   },
   plugins: [basicBuildPlugin, uServicesPlugin],
   runtime: Runtime,
-  tasks: {}
+  tasks: {
+    run: {
+      execute: function(buildModel: MarkScript.BuildModel, buildConfig: MarkScript.BuildConfig, server: Runtime) {
+        return new Promise(function(resolve, reject){})
+      },
+      description: 'Run an instance of the KOA server'
+    }
+  }
 }
