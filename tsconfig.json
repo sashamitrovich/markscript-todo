@@ -22,11 +22,15 @@
         "api.d.ts",
         "markscriptfile.ts",
         "build/databaseModel.ts",
+        "test/test.ts",
         "node_modules/markscript-core/model.d.ts",
         "node_modules/markscript-basic-build/build.d.ts",
         "node_modules/markscript-core/build.d.ts",
         "node_modules/markscript-koa/build.d.ts",
         "node_modules/markscript-uservices-build/build.d.ts",
         "node_modules/speckle/speckle.d.ts"
-    ]
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }

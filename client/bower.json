@@ -1,0 +1,23 @@
+{
+  "name": "polymer-helloworld",
+  "authors": [
+    "Saša Mitrović <sasha.mitrovich@marklogic.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "polymer-ts": "~0.1.21",
+    "uservices-socket.io-client-polymer": "*"
+  }
+}

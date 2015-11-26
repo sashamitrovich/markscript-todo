@@ -63,7 +63,30 @@
   "modulesDatabase": "todo-modules",
   "schemaDatabase": "todo-schema",
   "triggersDatabase": "todo-triggers",
-  "modules": {},
-  "extensions": {},
-  "serviceSpecs": {}
+  "modules": {
+    "/todo/service": {
+      "name": "/todo/service",
+      "code": ""
+    },
+    "/todo/utils": {
+      "name": "/todo/utils",
+      "code": ""
+    }
+  },
+  "extensions": {
+    "todo-putItem": {
+      "name": "todo-putItem",
+      "code": ""
+    }
+  },
+  "serviceSpecs": {
+    "todo": {
+      "methods": {
+        "putItem": {
+          "method": 1
+        }
+      },
+      "events": {}
+    }
+  }
 }

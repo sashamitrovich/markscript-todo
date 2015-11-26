@@ -17,8 +17,13 @@
     "compileOnSave": false,
     "files": [
         "../api.d.ts",
+        "./service.ts",
+        "./utils.ts",
         "../node_modules/markscript-core/model.d.ts",
-        "../node_modules/marklogic-typescript-definitions/ts/index.d.ts",
-        "../node_modules/markscript-uservices/model.d.ts"
-    ]
+        "../node_modules/markscript-uservices/model.d.ts",
+        "../node_modules/marklogic-typescript-definitions/ts/index.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }
