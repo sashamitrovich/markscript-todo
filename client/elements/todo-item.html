@@ -1,16 +1,25 @@
+<dom-module id="todo-item">
 
-<link href="../bower_components/polymer/polymer.html" rel="import">
-<!-- Element Imports -->
+  <template>
+    <paper-card  elevation="1" heading="To-Do Item">
+      <div class="card-content">
+        <paper-input id="editContent" value="{{content}}" placeholder="Example: visit doctor"></paper-input>
+      </div>
+      <div class="card-actions">
+        <paper-button>Add</paper-button>
+      </div>
+    </paper-card>
+  </template>
 
-
-<dom-module id="element-name">
-<style>
-/* CSS rules for your element */
-</style>
-<template>
-  <!-- local DOM for your element -->
-  ...
-</template>
+  <script>
+  Polymer({
+    is: "todo-item",
+    properties: {
+      content: {
+        type: String,
+        value: ""
+      }
+    }
+  });
+  </script>
 </dom-module>
-
-<script type="text/javascript" src="../scripts/todo-item.js"></script>

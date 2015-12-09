@@ -1,0 +1,24 @@
+<dom-module id="hello-world-element">
+
+  <template>
+    <p>
+      Hello <strong>{{name}}</strong>, how are you today?
+    </p>
+    <!-- iron-input exposes a two-way bindable input value -->
+    <input is="iron-input" bind-value="{{name}}"
+    placeholder="Your name here...">
+  </template>
+
+  <script>
+  Polymer({
+    is: "hello-world-element",
+    properties: {
+      name: {
+        type: String,
+        value: "stranger"
+      }
+    }
+  });
+  </script>
+
+</dom-module>

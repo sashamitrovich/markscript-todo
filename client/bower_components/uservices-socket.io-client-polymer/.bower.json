@@ -46,5 +46,6 @@
   },
   "_source": "git://github.com/christyharagan/uservices-socket.io-client-polymer.git",
   "_target": "*",
-  "_originalSource": "uservices-socket.io-client-polymer"
+  "_originalSource": "uservices-socket.io-client-polymer",
+  "_direct": true
 }

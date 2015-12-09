@@ -1,22 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
 
-  <!-- webcomponents, polymer standard, polymer-ts -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <link rel="import" href="bower_components/polymer/polymer.html">
-
-  <!-- application elements -->
-  <link href="elements/mathgame-element.html" rel="import">
-
-  <script src="bower_components/socket.io-client/socket.io.js"></script>
-
-  <!-- uservices elements -->
-  <link rel="import" href="bower_components/uservices-socket.io-client-polymer/elements/event.html">
-  <link rel="import" href="bower_components/uservices-socket.io-client-polymer/elements/method.html">
-
-
+  <link rel="import" href="elements/elements.html">
 </head>
-<body unresolved>
-  <todo-item></todo-item>
+<body unresolved class="fullbleed layout vertical">
+  <paper-drawer-panel>
+    <paper-header-panel drawer>
+      <paper-toolbar>
+        <div>Application</div>
+      </paper-toolbar>
+      <div> Drawer content... </div>
+    </paper-header-panel>
+    <paper-header-panel main>
+      <paper-toolbar>
+        <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+        <div>Title</div>
+      </paper-toolbar>
+      <todo-item></todo-item>
+    </paper-header-panel>
+  </paper-drawer-panel>
+
 </body>
+</html>
