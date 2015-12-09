@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es3",
+        "noImplicitAny": false,
+        "outDir": "built",
+        "rootDir": ".",
+        "sourceMap": false
+    },
+    "filesGlob": [
+        "../server/api.d.ts",
+        "./index.d.ts",
+        "./src/**/*.ts",
+        "./typings/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -12,3 +12,15 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+#cards {
+  @apply(--layout-vertical);
+  @apply(--center-justified);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+paper-card {
+  width: 100%;
+  margin-bottom: 16px;
+}

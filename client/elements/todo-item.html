@@ -1,14 +1,16 @@
 <dom-module id="todo-item">
 
   <template>
-    <paper-card  elevation="1" heading="To-Do Item">
-      <div class="card-content">
-        <paper-input id="editContent" value="{{content}}" placeholder="Example: visit doctor"></paper-input>
-      </div>
-      <div class="card-actions">
-        <paper-button>Add</paper-button>
-      </div>
-    </paper-card>
+    <div id="cards">
+      <paper-card elevation="1" heading="To-Do Item">
+        <div class="card-content">
+          <paper-input id="editContent" value="{{content}}" placeholder="Example: visit doctor"></paper-input>
+        </div>
+        <div class="card-actions">
+          <paper-button>Add</paper-button>
+        </div>
+      </paper-card>
+    </div>
   </template>
 
   <script>
